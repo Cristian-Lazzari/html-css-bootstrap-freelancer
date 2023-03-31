@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
+    <header class="bg_primary">
         
-        <nav class="navbar navbar-expand-sm bg-body-tertiary bg-nav text-bg-light px-0 px-md-5 px-lg-6">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary bg_nav text-bg-light px-0 px-md-5 px-lg-6 fixed-top">
             <div class="container-fluid ">
                 <a class="navbar-brand text-color-white" href="#">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,10 +39,97 @@
             </div>
         </nav>
 
-        <div class="container">
-            <img class="w-25" src="img/avatar.svg" alt="">
+        <div class="container text-center  ">
+            <img class="" src="img/avatar.svg" alt="">
+            <h1 class="text-color-white">START BOOTSTRAP</h1>
+            <div class="title-star text-color-white">
+                <div class="line bg_white"></div>
+                <i class="bi bi-star-fill"></i>
+                <div class="line bg_white"></div>
+            </div>
+            <ul class="text-color-white">
+                <li>GRAPHIC ARTIST</li>
+                <li class="trattino">WEB DESIGNER</li>
+                <li class="trattino">ILLUSTRATOR</li>
+            </ul>
         </div>
     </header>
+    <section class="portfolio text-center py-5">
+        <h1>PORTFOLIO</h1>
+        <div class="title-star">
+            <div class="line bg_black"></div>
+            <i class="bi bi-star-fill"></i>
+            <div class="line bg_black"></div>
+        </div>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-lg-4"><img class="w-10 g-10" src="img/cabin.png" alt=""></div>
+                <div class="col-12 col-sm-6 col-lg-4"><img class="w-10 g-10" src="img/cabin.png" alt=""></div>
+                <div class="col-12 col-sm-6 col-lg-4"><img class="w-10 g-10" src="img/cabin.png" alt=""></div>
+                <div class="col-12 col-sm-6 col-lg-4"><img class="w-10 g-10" src="img/cabin.png" alt=""></div>
+                <div class="col-12 col-sm-6 col-lg-4"><img class="w-10 g-10" src="img/cabin.png" alt=""></div>
+                <div class="col-12 col-sm-6 col-lg-4"><img  class="w-100"src="img/cabin.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="about bg_primary px-1 px-sm-3 px-lg-6 py-3 py-md-5">
+        <h1 class="text-light text-center">ABOUT</h1>
+        <div class="title-star text-color-white">
+            <div class="line bg_white"></div>
+            <i class="bi bi-star-fill"></i>
+            <div class="line bg_white"></div>
+        </div>
+        <div class="row text-light">
+            <div class="col-12 col-md-6">
+                <div class="contents">
+                    Lorem ipsum dolor ssitatibus eligendi
+                    nam laborum est, esse quod ad optio assumenda. Hic enim temporibus minus voluptatum eligendi eveniet ipsum fugit ab?
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="contents">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut earum necessitatibus eligendi nam laborum est, esse quod ad optio assumenda. Hic enim temporibus minus voluptatum eligendi eveniet ipsum fugit ab?
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-light">Download</button>
+    </section>
+    <section class="contact py-4 py-md-5">
+        <h1 class="text-center">CONTACT ME</h1>
+        <div class="title-star">
+            <div class="line bg_black"></div>
+            <i class="bi bi-star-fill"></i>
+            <div class="line bg_black"></div>
+        </div>
+        <div class="container px-4 px-lg-6">
+            <form class="row gx-3 gy-2 align-items-center">
+                <div class="col-12">
+                  <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                  <input type="text" class="form-control border_none" id="specificSizeInputName" placeholder="Jane Doe">
+                </div>
+                <div class="col-12">
+                    <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                    <input type="text" class="form-control border_none" id="specificSizeInputName" placeholder="Jane Doe">
+                  </div>
+                <div class="col-12">
+                  <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control border_none" id="specificSizeInputGroupUsername" placeholder="Username">
+                  </div>
+                </div>
+                <div class="input-group">
+                    
+                    <textarea class="form-control border_none" aria-label="With textarea" placeholder="Message"></textarea>
+                  </div>
+                <div class="col-auto ">
+                  <button type="submit" class="btn bg_primary text-light ">Send</button>
+                </div>
+              </form>
+        </div>
+    </section>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
